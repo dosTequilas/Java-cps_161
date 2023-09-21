@@ -1,0 +1,19 @@
+package classDemo;
+
+import java.util.Scanner;
+
+
+public class ScannerDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int myInt;
+		double myDouble;
+		String myStr;
+		myInt = scan.nextInt();
+		myDouble = scan.nextDouble();
+		myStr = scan.next();
+	}
+
+}

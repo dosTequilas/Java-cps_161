@@ -1,0 +1,39 @@
+package classPractice;
+
+import java.util.Scanner;
+
+public class BoundDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int startingValue;
+		int upperBound;
+		int step;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("please enter the starting value: ");
+		startingValue = scan.nextInt();
+		System.out.println("please enter the upper bound: ");
+		upperBound = scan.nextInt();
+		System.out.println("please enter the step: ");
+		step = scan.nextInt();
+		
+		for (int i = startingValue; i <= upperBound; i = i + step) {
+			System.out.println(i);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		scan.close();
+	}
+
+}

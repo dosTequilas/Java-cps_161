@@ -1,0 +1,36 @@
+package classPractice;
+
+import java.util.Scanner;
+
+public class TempConverter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		double celsius1;
+		double fahrenheit1;
+		double celsius2;
+		double fahrenheit2;
+	
+		
+		System.out.println("Please enter a temperature in celsius: ");
+		celsius1 = scan.next();
+		fahrenheit1 = celsius1 * 9 / 5 + 32;
+	
+		System.out.println("celsius " + celsius1 + " is " + fahrenheit1 + " in fahrenheit");
+		
+//		System.out.println("Please enter a double value: ");
+//		myDouble = scan.nextDouble();
+//		System.out.println("Please enter a string :");
+//		//myStr = scan.next();
+//		scan.nextLine();
+//		myStr = scan.nextLine();
+//		System.out.println("myInt: " + myInt);
+//		System.out.println("yourInt: " + yourInt);
+//		System.out.println("myDouble: " + myDouble);
+//		System.out.println("myStr: " + myStr);
+		
+		scan.close();
+	}
+
+}

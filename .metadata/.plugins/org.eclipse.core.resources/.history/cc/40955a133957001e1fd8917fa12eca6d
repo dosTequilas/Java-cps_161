@@ -1,0 +1,29 @@
+package classDemo;
+
+import java.util.Scanner;
+
+public class MaxMinDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int currentNum = 0;
+		int biggestNum = 0;
+		String doWeContinue = "yes";
+		
+		
+		while(!doWeContinue.equals("no")) {
+			System.out.println("please enter an integer");
+			currentNum = scan.nextInt();
+			scan.nextLine();
+			System.out.println("do you want to continue?");
+			doWeContinue = scan.nextLine();
+			if (currentNum > biggestNum) {
+				biggestNum = currentNum;
+		}
+
+	}
+		System.out.println("The biggest number entered was: " + biggestNum);
+	}
+
+}

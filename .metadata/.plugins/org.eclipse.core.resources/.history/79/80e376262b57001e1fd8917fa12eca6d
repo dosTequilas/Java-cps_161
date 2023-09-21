@@ -1,0 +1,32 @@
+package classDemo;
+
+import java.util.Scanner;
+
+public class AccumulationDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		Scanner scan = new Scanner(System.in);
+		int numb = 11;
+		System.out.println("please enter an integer, negative value to exit");
+		numb = scan.nextInt();
+		int counter = 0;
+		int sum = 0;
+		double average = 0;
+		
+		while(numb >= 0) {
+			System.out.println("numb is: " + numb);
+			counter++;
+			sum = sum + numb;
+			System.out.println("inside of the while loop");
+			numb = scan.nextInt();
+		}
+		average = sum / counter;
+		
+		System.out.println("outside the loop");
+		System.out.println("the sum of your numbers is " + sum);
+		System.out.println("you entered " + counter + " positive or zero numbers");
+		System.out.println("your average is " + average);
+	}
+
+}

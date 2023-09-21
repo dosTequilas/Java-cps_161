@@ -1,0 +1,25 @@
+package classPractice;
+
+import java.util.Scanner;
+
+public class RideReqs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int requiredHeight = 50;
+		int userHeight;
+		
+		System.out.println("Please enter your height: ");
+		userHeight = scan.nextInt();
+		
+		if (userHeight < requiredHeight) {
+			System.out.println("enjoy the ride");
+		} else {
+			System.out.println("sorry, you do not meet the height reqirement");
+		}
+		
+		scan.close();
+	}
+
+}

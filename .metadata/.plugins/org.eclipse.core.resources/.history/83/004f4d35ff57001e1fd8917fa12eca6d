@@ -1,0 +1,16 @@
+package classPractice;
+
+import java.util.Scanner;
+
+public class PrintTriangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		for (char i = "a"; i <= "z"; i++) {
+			System.out.println(i);
+		}
+		scan.close();
+	}
+
+}

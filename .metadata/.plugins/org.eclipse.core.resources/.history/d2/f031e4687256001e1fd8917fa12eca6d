@@ -1,0 +1,22 @@
+package classDemo;
+
+public class BuildBooleanExp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int score = 5;
+		
+//		if (score > 0 && score < 10) {
+//			System.out.println("Score is between 0 and 10");
+//		} else {
+//			System.out.println("Score is not between 0 and 10");
+//		}
+		
+		if (score < 0 || score > 10) {
+			System.out.println("Score is less than 0 or greater than 10");
+		} else {
+			System.out.println("Score is not less than 0 or greater than 10");
+		}
+	}
+
+}

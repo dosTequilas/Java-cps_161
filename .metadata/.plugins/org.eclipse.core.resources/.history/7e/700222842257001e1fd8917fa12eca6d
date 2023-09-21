@@ -1,0 +1,17 @@
+package classDemo;
+
+public class LoopDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numb = 1;
+		
+		while(numb < 10) {
+			System.out.println("numb is: " + numb);
+			numb++;
+		}
+		System.out.println("outside the loop");
+		System.out.println("the final value of numb is: " + numb);
+	}
+
+}

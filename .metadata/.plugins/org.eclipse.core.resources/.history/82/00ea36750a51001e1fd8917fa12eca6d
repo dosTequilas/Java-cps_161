@@ -1,0 +1,67 @@
+package bill;
+
+import java.util.Scanner;
+
+public class Bill {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+        double subtotal = 0.0;
+
+        System.out.println("Input details for three dishes:");
+
+        System.out.print("Input name of dish 1: ");
+        String name1 = scan.nextLine();
+
+        System.out.print("Input quantity of dish 1: ");
+        int quantity1 = scan.nextInt();
+
+        System.out.print("Input price of dish 1: ");
+        double price1 = scan.nextDouble();
+        subtotal += quantity1 * price1;
+
+        scan.nextLine(); // Consume newline
+
+        System.out.print("Input name of dish 2: ");
+        String name2 = scan.nextLine();
+
+        System.out.print("Input quantity of dish 2: ");
+        int quantity2 = scan.nextInt();
+
+        System.out.print("Input price of dish 2: ");
+        double price2 = scan.nextDouble();
+        subtotal += quantity2 * price2;
+
+        scan.nextLine(); // Consume newline
+
+        System.out.print("Input name of dish 3: ");
+        String name3 = scan.nextLine();
+
+        System.out.print("Input quantity of dish 3: ");
+        int quantity3 = scan.nextInt();
+
+        System.out.print("Input price of dish 3: ");
+        double price3 = scan.nextDouble();
+        subtotal += quantity3 * price3;
+
+        double tip = subtotal * 0.18;
+        double tax = subtotal * 0.06;
+        double total = subtotal + tip + tax;
+
+        System.out.println("\nYour bill:");
+        System.out.println("Dish                        Quantity  Price     Total");
+
+        System.out.printf("%-30s %5d %10.2f %10.2f%n", name1, quantity1, price1, quantity1 * price1);
+        System.out.printf("%-30s %5d %10.2f %10.2f%n", name2, quantity2, price2, quantity2 * price2);
+        System.out.printf("%-30s %5d %10.2f %10.2f%n", name3, quantity3, price3, quantity3 * price3);
+
+        System.out.printf("\nSubtotal $%.2f%n", subtotal);
+        System.out.printf("18%% tip (before tax) $%.2f%n", tip);
+        System.out.printf("6.00%% sales tax $%.2f%n", tax);
+        System.out.printf("Total $%.2f%n", total);
+
+        scan.close();
+	}
+
+}

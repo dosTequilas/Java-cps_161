@@ -1,0 +1,100 @@
+package classDemo;
+
+public class SwitchDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int month = 1;
+		String monthString;
+		int numbDays;
+		
+		switch (month) {
+		case 1: 
+			monthString = "January";
+			break;
+			
+		case 2:
+			monthString = "February";
+			break;
+			
+		case 3:
+			monthString = "March";
+			break;
+			
+		case 4: 
+			monthString = "April";
+			break;
+			
+		case 5:
+			monthString = "May";
+			break;
+			
+		case 6:
+			monthString = "June";
+			break;
+			
+		case 7: 
+			monthString = "July";
+			break;
+			
+		case 8:
+			monthString = "August";
+			break;
+			
+		case 9:
+			monthString = "September";
+			break;
+			
+		case 10: 
+			monthString = "October";
+			break;
+			
+		case 11:
+			monthString = "November";
+			break;
+			
+		case 12:
+			monthString = "December";
+			break;
+			
+		default:
+			monthString = "Invalid month";
+			break;
+		}
+		
+//		switch(month) {
+//		case 1, 3, 5, 7, 8, 10, 12:
+//			numbDays = 31;
+//		break;
+//		
+//		case 4, 6, 9, 11:
+//			numbDays = 30;
+//		break;
+//		
+//		case 2:
+//			numbDays = 28;
+//		break;
+//		
+//		default: 
+//			numbDays = 0;
+//		}
+		
+		numbDays = switch(month) {
+		case 1, 3, 5, 7, 8, 10, 12 -> {
+			System.out.println("longer month");
+			yield 31;
+		}
+		
+		case 4, 6, 9, 11 -> 30;
+		
+		case 2 -> 28;
+		
+		default -> 0;
+		};
+		
+		System.out.println("The month is: " + monthString);
+		System.out.println("numb of days: " + numbDays);
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package classDemo;
+
+import java.util.Scanner;
+
+public class AccumulationDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner scan = new Scanner(System.in);
+		int numb = 11;
+		System.out.println("please enter an integer, negative value to exit");
+		numb = scan.nextInt();
+		while(numb >= 0) {
+			System.out.println("numb is: " + numb);
+			System.out.println("inside of the while loop");
+			numb = scan.nextInt();
+		}
+		System.out.println("outside the loop");
+	}
+
+}

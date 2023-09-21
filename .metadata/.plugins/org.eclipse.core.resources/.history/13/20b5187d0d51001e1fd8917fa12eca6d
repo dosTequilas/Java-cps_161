@@ -1,0 +1,52 @@
+package make_change;
+
+public class MakeChange {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter price dollars: ");
+        int priceDollars = scan.nextInt();
+
+        System.out.print("Enter price cents: ");
+        int priceCents = scan.nextInt();
+
+        System.out.print("Enter money received dollars: ");
+        int moneyDollars = scan.nextInt();
+
+        System.out.print("Enter money received cents: ");
+        int moneyCents = scan.nextInt();
+
+        // Преобразуем все деньги в пенни
+        int totalPriceInPennies = priceDollars * 100 + priceCents;
+        int totalMoneyInPennies = moneyDollars * 100 + moneyCents;
+
+        int changeInPennies = totalMoneyInPennies - totalPriceInPennies;
+
+        // Вычисляем количество долларов, четвертаков, десяток, никелей и пенсов в сдаче
+        int dollars = changeInPennies / 100;
+        changeInPennies %= 100;
+
+        int quarters = changeInPennies / 25;
+        changeInPennies %= 25;
+
+        int dimes = changeInPennies / 10;
+        changeInPennies %= 10;
+
+        int nickels = changeInPennies / 5;
+        changeInPennies %= 5;
+
+        int pennies = changeInPennies;
+
+        System.out.println("Change returned:");
+        System.out.println(dollars + " dollar(s)");
+        System.out.println(quarters + " quarter(s)");
+        System.out.println(dimes + " dime(s)");
+        System.out.println(nickels + " nickel(s)");
+        System.out.println(pennies + " pennies");
+
+        scan.close();
+	}
+
+}

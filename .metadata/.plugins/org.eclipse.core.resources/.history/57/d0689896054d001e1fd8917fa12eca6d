@@ -1,0 +1,16 @@
+package classPractice;
+
+public class ByuingChair {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int dollarsIHave = 100;
+		int dollarsForOneChair = 30;
+		
+		int chairsICanBuy = dollarsIHave / dollarsForOneChair;
+		int dollarsIHaveAfterPurchase = dollarsIHave % dollarsForOneChair;
+		
+		System.out.println("I can buy " + chairsICanBuy + " chairs for $100");
+	}
+
+}

@@ -1,0 +1,16 @@
+package classDemo;
+
+public class IfDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String light = "red";
+		if (light.equals("red")) {
+			System.out.println("red means stop");
+		}else {
+			System.out.println("go");
+		}
+		System.out.println("continue driving");
+	}
+
+}

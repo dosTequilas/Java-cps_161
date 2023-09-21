@@ -1,0 +1,53 @@
+package make_change;
+
+import java.util.Scanner;
+
+public class MakeChange {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter price dollars: ");
+        int priceDollars = scan.nextInt();
+
+        System.out.println("Enter price cents: ");
+        int priceCents = scan.nextInt();
+
+        System.out.println("Enter money received dollars: ");
+        int moneyDollars = scan.nextInt();
+
+        System.out.println("Enter money received cents: ");
+        int moneyCents = scan.nextInt();
+
+        // Convert all the money to pennies
+        int totalPriceInPennies = priceDollars * 100 + priceCents;
+        int totalMoneyInPennies = moneyDollars * 100 + moneyCents;
+
+        int changeInPennies = totalMoneyInPennies - totalPriceInPennies;
+
+        // Calculating the amount of dollars, quarters, dimes, nickels and pennies
+        int dollars = changeInPennies / 100;
+        changeInPennies %= 100;
+
+        int quarters = changeInPennies / 25;
+        changeInPennies %= 25;
+
+        int dimes = changeInPennies / 10;
+        changeInPennies %= 10;
+
+        int nickels = changeInPennies / 5;
+        changeInPennies %= 5;
+
+        int pennies = changeInPennies;
+        System.out.println("Change returned:\n");
+        System.out.println(dollars + " dollar(s)");
+        System.out.println(quarters + " quarter(s)");
+        System.out.println(dimes + " dime(s)");
+        System.out.println(nickels + " nickel(s)");
+        System.out.println(pennies + " pennies");
+
+        scan.close();
+	}
+
+}

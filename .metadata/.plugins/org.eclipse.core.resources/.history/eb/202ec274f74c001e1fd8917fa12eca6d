@@ -1,0 +1,14 @@
+package classDemo;
+
+public class VarDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int firstNumb = 5; // declaration
+		int secondNumb = 10; // "=" is called "assignment operator"
+		firstNumb = secondNumb;
+		
+		System.out.println(firstNumb); // shortcut: "sysout" + Ctrl + Space
+	}
+
+}

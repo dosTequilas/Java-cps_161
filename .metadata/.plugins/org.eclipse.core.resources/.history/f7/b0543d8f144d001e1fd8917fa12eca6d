@@ -1,0 +1,26 @@
+package classDemo;
+
+import java.util.Scanner;
+
+
+public class ScannerDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int myInt;
+		double myDouble;
+		String myStr;
+		System.out.println("Please enter an  integer: ");
+		myInt = scan.nextInt();
+		System.out.println("Please enter a double value: ");
+		myDouble = scan.nextDouble();
+		System.out.println("Please enter a string :");
+		//myStr = scan.next();
+		myStr = scan.nextLine();
+		System.out.println("myInt: " + myInt);
+		System.out.println("myDouble: " + myDouble);
+		System.out.println("myStr: " + myStr);
+	}
+
+}

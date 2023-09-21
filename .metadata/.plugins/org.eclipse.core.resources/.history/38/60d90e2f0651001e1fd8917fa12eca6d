@@ -1,0 +1,20 @@
+package classDemo;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//0123456789
+		//Good morning Evgenii!
+		//charAt, length, toLowerCase, toUpperCase
+		//indexOf, subString
+		String greeting = "Good morning ";
+		String name = "Evgenii";
+		String myStr;
+		myStr = greeting + name;
+		System.out.println(myStr);
+		int size = myStr.length();
+		System.out.println("The size of the string is: " + size);
+	}
+
+}
