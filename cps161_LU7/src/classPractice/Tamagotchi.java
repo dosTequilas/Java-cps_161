@@ -4,15 +4,20 @@ public class Tamagotchi {
 
 	//String name, int hunger, int boredom
 	//toString, feed, play, timePassed
-	
-	private String name;
+	private String name; // instance variable, can't be returned in a static method
 	private int hunger;
 	private int boredom;
+	public static int numbOfPets;
 	
 	public Tamagotchi(String name) {
 		this.name = name;
 		hunger = 10;
-		boredom = 10; 
+		boredom = 10;
+		numbOfPets++;
+	}
+	
+	public static int getNumbOfPets() {
+		return numbOfPets;
 	}
 
 	@Override
@@ -30,7 +35,7 @@ public class Tamagotchi {
 			str = name + " is happy.";
 		}
 		
-		return "Tamagotchi [name=" + name + ", hunger=" + hunger + ", boredom=" + boredom + "]\n" + str;
+		return "Tamagotchi [name=" + name + ", hunger=" + hunger + ", boredom=" + boredom + "]\n" + str + " numb of pets: " + numbOfPets;
 	}
 	
 	public int getHunger() {
