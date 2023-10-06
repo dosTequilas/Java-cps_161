@@ -4,6 +4,7 @@ public class BuildBooleanExp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		int score = 5;
 		
 //		if (score > 0 && score < 10) {
