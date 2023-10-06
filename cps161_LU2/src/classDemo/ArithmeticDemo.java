@@ -12,6 +12,7 @@ public class ArithmeticDemo {
 		int mulResult;
 		int divResult;
 		int modResult;
+	
 		double doubleDivResult;
 		
 		addResult = firstNumb + secondNumb;
