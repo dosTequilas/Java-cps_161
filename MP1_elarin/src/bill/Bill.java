@@ -6,6 +6,7 @@ public class Bill {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		Scanner scan = new Scanner(System.in);
         double subtotal = 0.0;
 
