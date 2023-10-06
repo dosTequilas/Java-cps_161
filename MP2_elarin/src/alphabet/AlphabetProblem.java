@@ -19,7 +19,5 @@ public class AlphabetProblem {
 			System.out.println(letter + " " + result);
 			letter++;
 		}
-		
 	}
-
 }
