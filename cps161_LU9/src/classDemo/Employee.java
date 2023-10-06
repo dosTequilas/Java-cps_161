@@ -54,7 +54,5 @@ public abstract class Employee { //not a concrete class anymore
 			Employee employee = (Employee)object; // casting
 			return name.equals(employee.name) && hiredDate.equals(employee.hiredDate);
 		}
-		
 	}
-
 }
