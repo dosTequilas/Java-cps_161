@@ -22,5 +22,8 @@ public class TamagotchiDemo {
 		
 		cookie.play();
 		System.out.println(cookie);
-	}
+		
+		cookie.speak();
+		fifi.speak();
+		}
 }

@@ -8,6 +8,7 @@ public class Tamagotchi {
 	private int hunger;
 	private int boredom;
 	public static int numbOfPets;
+	String[] vocabulary = {"Hello", "Hola", "Hi", "Privet"};
 	
 	public Tamagotchi(String name) {
 		this.name = name;
@@ -70,6 +71,11 @@ public class Tamagotchi {
 			hunger += 5;
 			boredom += 5;
 		}
+	}
+	
+	public void speak() {
+		int random = (int) (Math.random() * 4);
+		System.out.println(vocabulary[random]);
 	}
 
 }
